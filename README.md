@@ -45,7 +45,7 @@
 ```
 main.py            запуск: HTTP-сервер Mini App + long polling бота
 app/               config, db (SQLite), imaging (Pillow), server (API), handlers (бот)
-webapp/            index.html, app.css, app.js — Mini App без сборки
+webapp/            index.html, app.css, studio.js — Mini App без сборки (JS назван не app.js, чтобы хостинги не принимали его за Node-приложение)
 app/frames.py      все 37 рамок (Pillow)
 tools/dev_server.py  локальный предпросмотр дизайна в браузере (без Telegram)
 videos/storyframe-promo/  промо-ролик (HyperFrames): renders/video.mp4
