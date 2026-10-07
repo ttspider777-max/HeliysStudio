@@ -1,0 +1,16 @@
+# Деплой на Amvera (https://amvera.ru): Mini App + бот в одном процессе.
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.11
+
+build:
+  requirementsPath: requirements.txt
+
+run:
+  scriptName: main.py
+  # база и временные файлы живут в постоянном хранилище
+  persistenceMount: /data
+  # порт, на котором слушает Mini App (переменная PORT в Amvera = 8080)
+  containerPort: 8080
